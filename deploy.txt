@@ -1,2 +1,2 @@
-1. Crie uma venv e baixe os requirements
+1. Crie uma venv e baixe os requirements em "requirements.py"
 2. Em src rode o comando "python start.py"
