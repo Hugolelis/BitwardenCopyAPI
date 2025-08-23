@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from src.controllers.user_controller import UserController
 
-router = APIRouter(prefix="/user", tags=["Usuários"])
+router = APIRouter(prefix="/users", tags=["Usuários"])
 controller = UserController()  # instancia da classe
 
 @router.get("/")

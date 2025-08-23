@@ -8,5 +8,5 @@ app = FastAPI(
 )
 
 # routers
-from src.routers import user_router
-app.include_router(user_router.router)
+from src.routers import users_router
+app.include_router(users_router.router)
