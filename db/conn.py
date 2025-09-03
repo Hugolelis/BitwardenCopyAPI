@@ -29,6 +29,6 @@ Base = declarative_base()
 # Criar sessão
 SessionLocal = sessionmaker(bind=engine)
 
-# Exemplo de criação de tabelas (a partir dos seus models)
+# Criação das tabelas no banco
 Base.metadata.create_all(bind=engine)
 
