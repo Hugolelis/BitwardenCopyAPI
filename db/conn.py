@@ -21,7 +21,7 @@ try:
     else:
         print("[bold yellow]⚠ Database already exists.[/bold yellow]")
 except Exception as e:
-    print(f"[bold red]❌ Failed to create database![/bold red] [red]{e}[/red]")
+    print(f"[bold red]❌ Failed to create database, check connection![/bold red] [red]{e}[/red]")
 
 # Base para os models
 Base = declarative_base()
