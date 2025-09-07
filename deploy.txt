@@ -1,2 +1,2 @@
-1. Crie uma venv e baixe os requirements em "requirements.py"
-2. Em src rode o comando "python start.py"
+1. Utilize make venv para criar uma venv e baixar as dependencias
+2. Utilize o comando make run para rodar

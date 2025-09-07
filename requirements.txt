@@ -3,6 +3,7 @@ pip install "uvicorn[standard]"
 pip install psycopg2-binary
 pip install sqlalchemy
 pip install sqlalchemy-utils
+pip install alembic
 pip install PyMySQL
 
 

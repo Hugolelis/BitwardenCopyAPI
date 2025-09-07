@@ -16,9 +16,9 @@ app = FastAPI(
 try:
     with engine.connect() as connection:
         result = connection.execute(text("SELECT 1"))
-        print(f"[bold green]✅ Connection successful:[/] [yellow]{result.scalar()}[/]")
+        print(f"[bold green]✔ Connection successful:[/] [yellow]{result.scalar()}[/]")
 except Exception as e:
-    print(f"[bold red]❌ Connection failed:[/] {e}")
+    print(f"[bold red]⚠ Connection failed:[/] {e}")
 
 
 # routers
