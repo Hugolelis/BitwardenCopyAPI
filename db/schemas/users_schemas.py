@@ -1,7 +1,15 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 
-class UserSchema(BaseModel):
+class UserCreate(BaseModel):
+    name: str
+    email: EmailStr
+    password: str
+    confirm_password: str
+
+class UserResponse(BaseModel):
     id: int
     name: str
-    email: str
-    password: str
+    email: EmailStr
+
+    class Config:
+        from_attributes = True 

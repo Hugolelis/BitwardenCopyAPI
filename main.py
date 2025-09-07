@@ -6,11 +6,7 @@ from sqlalchemy import text
 from rich import print
 
 # API instancia
-app = FastAPI(
-    title="BitwardenCopy API",
-    description="API desenvolvida para praticar conceitos de FastAPI, simulando algumas " 
-    "funcionalidades do Bitwarden. Permite o gerenciamento seguro de senhas."
-)
+app = FastAPI()
 
 # teste conn db
 try:
@@ -20,10 +16,6 @@ try:
 except Exception as e:
     print(f"[bold red]⚠ Connection failed:[/] {e}")
 
-
 # routers
 from src.routes import users_router
 app.include_router(users_router.router)
-
-from src.routes import saves_router
-app.include_router(saves_router.router)
